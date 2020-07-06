@@ -1,0 +1,21 @@
+/* ============================================= */
+/*                   Variables                      */
+/* ============================================= */
+
+// Images
+
+@mixin images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+@mixin button($col) {
+  background-color: $col;
+
+  &:hover {
+    background-color: lighten($col, 20%);
+  }
+}
